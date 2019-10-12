@@ -161,7 +161,6 @@ button{
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -244,4 +243,13 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px){
+    .container{width: 500px; padding: 10px;}
+    .top-content, .middle-about{flex-direction: column; align-items: center;}
+    .middle-content .boxes .box{height: 60px;}
+    .longImg{width: 490px; padding-right: 10px;}
+
 }
