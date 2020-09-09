@@ -71,6 +71,28 @@ p {
     margin: 0 auto;
 }
 
+.longImg{
+    margin: 20px 0px 20px 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:last-child{
+    margin-right: 30px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,9 +107,44 @@ p {
     padding-bottom: 20px;  
 }
 
+.main-about{
+    padding-bottom: 20px; 
+    margin-bottom: 30px;
+    border-bottom: 1px dashed black
+}
+
+.middle-about{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.middle-about div{
+    width: 400px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+    padding: 10px;
+
+
+}
+
+.middle-about div img{
+    margin-bottom: 20px;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    background: white;
 }
 
 .middle-content h2 {
@@ -104,7 +161,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +168,50 @@ p {
     justify-content: center;
 }
 
+section.middle-content div:first-child{
+    background: teal;
+}
+
+section.middle-content div:nth-child(2){
+    background: gold;
+}
+
+section.middle-content div:last-child{
+    background: white;
+}
+
+section.middle-content div:nth-child(3){
+    background: cadetblue;
+}
+
+section.middle-content div:nth-child(4){
+    background: coral;
+}
+
+section.middle-content div:nth-child(5){
+    background: crimson;
+}
+
+section.middle-content div:nth-child(6){
+    background: forestgreen;
+}
+
+section.middle-content div:nth-child(7){
+    background: darkorchid;
+}
+
+section.middle-content div:nth-child(8){
+    background: hotpink;
+}
+
+section.middle-content div:nth-child(9){
+    background: indigo;
+}
+
+
+section.middle-content div:nth-child(10){
+    background: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +243,13 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px){
+    .container{width: 500px; padding: 10px;}
+    .top-content, .middle-about{flex-direction: column; align-items: center;}
+    .middle-content .boxes .box{height: 60px;}
+    .longImg{width: 490px; padding-right: 10px;}
+
 }
